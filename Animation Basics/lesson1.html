@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 01</title>
+    <style>
+        body {
+            margin:0px;
+            background: lightblue;
+            display: grid;
+            place-items: center;
+            width:100%;
+            height:100vh;
+        }
+        .search {
+            font-size: 50px;
+            color: #ffffff;
+            transition: color 2s, transform 0.5s;
+        }
+        .search:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            color: #055775;
+        }
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #6b6b6b;
+            padding: 10px 0;
+            transition: 2s linear;
+        }
+
+        input:hover {
+            width: 60%;
+            background: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="search">Search</div> -->
+    <input placeholder="search" />
+</body>
+</html>

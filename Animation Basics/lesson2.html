@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 02</title>
+    <style>
+        body {
+            margin:0;
+            background: lightblue;
+        }
+        .sky {
+            background: skyblue;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .atmos {
+            background: brown;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            position: relative;
+            left:25%;
+            top:25%;
+            animation-name: move;
+            animation-duration: 30s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .mountain1 {
+            width: 80%;
+            position: absolute;
+            bottom: 90%;
+            left:5%;
+        }
+        .mountain2 {
+            width: 80%;
+            position: absolute;
+            bottom: 50%;
+            right:60%;
+            transform: rotate(-70deg);
+        }
+        .mountain3 {
+            width: 90%;
+            position: absolute;
+            top: 80%;
+            right: 30%;
+            transform: rotate(-145deg);
+        }
+        .mountain4 {
+            width: 90%;
+            position: absolute;
+            top: 70%;
+            left:40%;
+            transform: rotate(-220deg);
+        }
+        .mountain5 {
+            width: 90%;
+            position: absolute;
+            top: 10%;
+            left:50%;
+            transform: rotate(-290deg);
+        }
+        
+        .road {
+            background:#075214;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            position: absolute;
+            left:27.2%;
+            top:27%; 
+            animation-name: move;
+            animation-duration: 8s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes move {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(-360deg);}
+        }
+        .tree {
+            width: 35%;
+            position: absolute;
+            transform: rotate(-40deg);
+            bottom:85%;
+        }
+        .tree1 {
+            width: 35%;
+            position: absolute;
+            transform: rotate(40deg);
+            bottom:80%;
+            left: 80%;
+        }
+        .tree2 {
+            width: 35%;
+            position: absolute;
+            transform: rotate(55deg);
+            bottom:50%;
+            left: 95%;
+        }
+        .tree3 {
+            width: 35%;
+            position: absolute;
+            transform: rotate(-105deg);
+            top:50%;
+            right: 95%;
+        }
+        .tree4 {
+            width: 35%;
+            position: absolute;
+            transform: rotate(-195deg);
+            top:90%;
+            right: 20%;
+        }
+
+        .bike {
+            background:#092e0f;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: absolute;
+            left:28.7%;
+            top:28.4%; 
+        }
+        .cycle {
+            width: 30%;
+            position: absolute;
+            bottom:95%;
+            left:33%;
+            transform: rotate(0deg);
+        }
+        .cover {
+            position: absolute;
+            width: 100%;
+            height: 600px;
+            background: lightblue;
+            top: 35%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sky">
+            <div class="atmos">
+                <img class="mountain1" src="mountain1.png" alt="" />
+                <img class="mountain2" src="mountain1.png" alt="" />
+                <img class="mountain3" src="mountain1.png" alt="" />
+                <img class="mountain4" src="mountain1.png" alt="" />
+                <img class="mountain5" src="mountain1.png" alt="" />
+            </div>
+            <div class="road">
+                <img class="tree" src="./tree.png" alt="" />
+                <img class="tree1" src="./tree1.png" alt="" />
+                <img class="tree2" src="./tree.png" alt="" />
+                <img class="tree3" src="./tree1.png" alt="" />
+                <img class="tree4" src="./tree.png" alt="" />
+            </div>
+            <div class="bike">
+                <img class="cycle" src="./cylce.png" alt="" />
+            </div>
+        </div>
+        <div class="cover"></div>
+    </div>
+</body>
+</html>
